@@ -53,6 +53,19 @@
 .text-decoration-line-through {
   text-decoration: line-through !important; }
 
+/* text alignment */
+.text-left {
+  text-align: left !important; }
+
+.text-center {
+  text-align: center !important; }
+
+.text-right {
+  text-align: right !important; }
+
+.text-justify {
+  text-align: justify !important; }
+
 /* opacity */
 .opacity-1 {
   opacity: 0.1 !important; }
