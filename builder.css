@@ -27,3 +27,16 @@
 
 .border-raduis-4x {
   border-radius: 8px !important; }
+
+/* text decoration */
+.text-decoration-none {
+  text-decoration: none !important; }
+
+.text-decoration-underline {
+  text-decoration: underline !important; }
+
+.text-decoration-overline {
+  text-decoration: overline !important; }
+
+.text-decoration-line-through {
+  text-decoration: line-through !important; }
