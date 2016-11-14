@@ -10,6 +10,18 @@ $raduis:2px;
     padding: 0 !important;
 }
 
+.no-border {
+    border: none !important;
+}
+
+.no-box-shadow { 
+    box-shadow: none !important;
+}
+
+.no-text-shadow { 
+    text-shadow: none !important;
+}
+
 /* postion preset*/
 .position-relative { 
     position:relative !important;
