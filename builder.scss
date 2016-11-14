@@ -1,6 +1,7 @@
 
-/* no preset */
+$raduis:2px;
 
+/* no preset */
 .no-margin { 
     margin:  0 !important;
 }
@@ -9,9 +10,7 @@
     padding: 0 !important;
 }
 
-
 /* postion preset*/
-
 .position-relative { 
     position:relative !important;
 }
@@ -23,3 +22,20 @@
 .position-fixed { 
     position:fixed !important;
 }
+
+/* border raduis */
+.border-raduis { 
+    border-radius: $raduis !important;
+}
+
+.border-raduis-2x { 
+    border-radius:$raduis * 2 !important;
+}
+
+.border-raduis-3x { 
+    border-radius:$raduis * 3 !important;
+}
+
+.border-raduis-4x { 
+    border-radius:$raduis * 4 !important;
+}   

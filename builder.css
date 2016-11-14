@@ -14,3 +14,16 @@
 
 .position-fixed {
   position: fixed !important; }
+
+/* border raduis */
+.border-raduis {
+  border-radius: 2px !important; }
+
+.border-raduis-2x {
+  border-radius: 4px !important; }
+
+.border-raduis-3x {
+  border-radius: 6px !important; }
+
+.border-raduis-4x {
+  border-radius: 8px !important; }
