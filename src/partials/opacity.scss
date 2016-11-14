@@ -1,0 +1,12 @@
+
+@import '../variables';
+
+.no-opacity { 
+    opacity:1 !important;
+}
+
+/* opacity */
+@for $opacity from $opacity-min through $opacity-max {
+  .opacity-#{$opacity} {
+    opacity:$opacity/10 !important; }
+}

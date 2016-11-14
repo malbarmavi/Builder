@@ -1,0 +1,23 @@
+
+@import '../_variables';
+
+.no-border {
+    border: none !important;
+}
+
+ /* border raduis */
+.border-raduis { 
+    border-radius: $border-raduis !important;
+}
+
+.border-raduis-2x { 
+    border-radius:$border-raduis * 2 !important;
+}
+
+.border-raduis-3x { 
+    border-radius:$border-raduis * 3 !important;
+}
+
+.border-raduis-4x { 
+    border-radius:$border-raduis * 4 !important;
+}  
