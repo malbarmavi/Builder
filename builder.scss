@@ -1,7 +1,7 @@
 
-$raduis:2px;
+$border-raduis:2px;
 
-/* no preset */
+ /* no preset */
 .no-margin { 
     margin:  0 !important;
 }
@@ -22,7 +22,11 @@ $raduis:2px;
     text-shadow: none !important;
 }
 
-/* postion preset*/
+.no-opacity { 
+    opacity:1 !important;
+}
+
+ /* postion preset */
 .position-relative { 
     position:relative !important;
 }
@@ -35,24 +39,24 @@ $raduis:2px;
     position:fixed !important;
 }
 
-/* border raduis */
+ /* border raduis */
 .border-raduis { 
-    border-radius: $raduis !important;
+    border-radius: $border-raduis !important;
 }
 
 .border-raduis-2x { 
-    border-radius:$raduis * 2 !important;
+    border-radius:$border-raduis * 2 !important;
 }
 
 .border-raduis-3x { 
-    border-radius:$raduis * 3 !important;
+    border-radius:$border-raduis * 3 !important;
 }
 
 .border-raduis-4x { 
-    border-radius:$raduis * 4 !important;
+    border-radius:$border-raduis * 4 !important;
 }   
 
-/* text decoration */
+ /* text decoration */
 .text-decoration-none { 
     text-decoration: none !important;
 }
@@ -69,4 +73,8 @@ $raduis:2px;
     text-decoration: line-through !important;
 }
 
-
+/* opacity */
+@for $opacity from 1 through 9 {
+  .opacity-#{$opacity} {
+    opacity:$opacity/10 !important; }
+}
