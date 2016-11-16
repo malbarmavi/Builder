@@ -7,28 +7,50 @@ var rename = require("gulp-rename");
 var clean = require('gulp-clean');
 var concat = require('gulp-concat'); 
 
+// tasks configration
+var config = {
+    compile :{
+        src:'src/*.scss',
+        dest:'./build'
+    },
+    concat: {
+        fileName:'builder.css'
+    },
+    clean:{
+        path :'./build/*.css'
+    },
+    minify:{
+        src:'./build/builder.css',
+        dest:'./build'
+    },
+    watch : {
+        src:["src/*.scss","src/partials/*.scss"]
+    }
+
+}
+
 gulp.task('clean',function(){
-    return gulp.src('./build/*.css')
+    return gulp.src(config.clean.path)
         .pipe(clean({force: true}))
 });
 
 gulp.task('compile',['clean'], function () {
-    return gulp.src('src/*.scss')
+    return gulp.src(config.compile.src)
         .pipe(sass().on('error', sass.logError))
         .pipe(autoprefixer())
-        .pipe(concat('builder.css'))
-        .pipe(gulp.dest('./build'));
+        .pipe(concat(config.concat.fileName))
+        .pipe(gulp.dest(config.compile.dest));
 });
 
 gulp.task('minify',function(){
-    return gulp.src('./build/builder.css')
+    return gulp.src(config.minify.src)
         .pipe(cssnano())
         .pipe(rename({suffix: '.min'}))
-        .pipe(gulp.dest('./build'));
+        .pipe(gulp.dest(config.minify.dest));
 });
 
 gulp.task('watch', function () {
-    gulp.watch('*.scss', ['compile']);
+    gulp.watch(config.watch.src, ['compile']);
 });
 
 gulp.task("default",['compile']);
