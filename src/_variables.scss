@@ -1,8 +1,16 @@
 
 // basic border raduis 
-$border-raduis:2px;
+$border-raduis: 2px;
 
 // opacity 0-9
-$opacity-min :0;
-$opacity-max :9;
-    
+$opacity-min : 0;
+$opacity-max : 9;
+
+//margin
+$margin-top-min : 1;
+$margin-top-max : 30;
+$margin-top-unit : px;
+
+$margin-bottom-min : 1;
+$margin-bottom-max : 30;
+$margin-bottom-unit : px;
