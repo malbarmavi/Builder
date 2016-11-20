@@ -2,3 +2,31 @@
 .no-padding { 
     padding: 0 !important;
 }
+
+/* padding-top */
+@for $padding-top from $padding-top-min through $padding-top-max {
+  .padding-top-#{$padding-top} {
+    padding-top:$padding-top + $padding-top-unit !important; 
+    }
+}
+
+/* padding-right */
+@for $padding-right from $padding-right-min through $padding-right-max {
+  .padding-right-#{$padding-right} {
+    padding-right:$padding-right + $padding-right-unit !important; 
+    }
+}
+
+/* padding-bottom */
+@for $padding-bottom from $padding-bottom-min through $padding-bottom-max {
+  .padding-bottom-#{$padding-bottom} {
+    padding-bottom:$padding-bottom + $padding-bottom-unit !important; 
+    }
+}
+
+/* padding-left */
+@for $padding-left from $padding-left-min through $padding-left-max {
+  .padding-left-#{$padding-left} {
+    padding-left:$padding-left + $padding-left-unit !important; 
+    }
+}
