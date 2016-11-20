@@ -7,10 +7,19 @@ $opacity-min : 0;
 $opacity-max : 9;
 
 //margin
-$margin-top-min : 1;
-$margin-top-max : 30;
+$margin-top-min : 0;
+$margin-top-max : 50;
 $margin-top-unit : px;
 
-$margin-bottom-min : 1;
-$margin-bottom-max : 30;
+$margin-right-min : 0;
+$margin-right-max : 50;
+$margin-right-unit : px;
+
+$margin-bottom-min : 0;
+$margin-bottom-max : 50;
 $margin-bottom-unit : px;
+
+$margin-left-min : 0;
+$margin-left-max : 50;
+$margin-left-unit : px;
+
