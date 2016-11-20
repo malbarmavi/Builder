@@ -1262,16 +1262,16 @@
   border-radius: 8px !important; }
 
 /* text decoration */
-.text-decoration-none {
+.no-text-decoration {
   text-decoration: none !important; }
 
-.text-decoration-underline {
+.text-underline {
   text-decoration: underline !important; }
 
-.text-decoration-overline {
+.text-overline {
   text-decoration: overline !important; }
 
-.text-decoration-line-through {
+.text-line-through {
   text-decoration: line-through !important; }
 
 /* text alignment */
@@ -1286,6 +1286,19 @@
 
 .text-justify {
   text-align: justify !important; }
+
+/* text transform */
+.no-text-transform {
+  text-transform: none !important; }
+
+.text-uppercase {
+  text-transform: uppercase !important; }
+
+.text-lowercase {
+  text-transform: lowercase !important; }
+
+.text-capitalize {
+  text-transform: capitalize; }
 
 /* postion preset */
 .position-relative {
